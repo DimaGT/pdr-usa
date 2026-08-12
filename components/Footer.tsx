@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { EMAIL } from "@/lib/site";
+import { EMAIL, FACEBOOK_URL, INSTAGRAM_URL } from "@/lib/site";
 
 export default function Footer() {
   return (
@@ -41,7 +41,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://instagram.com"
+            href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -49,6 +49,17 @@ export default function Footer() {
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
               <path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85 0 3.2-.01 3.58-.07 4.85-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07-3.2 0-3.58-.01-4.85-.07-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12c0-3.2.01-3.58.07-4.85.15-3.23 1.66-4.77 4.92-4.92C8.42 2.17 8.8 2.16 12 2.16ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.25a3.25 3.25 0 1 1 0-6.5 3.25 3.25 0 0 1 0 6.5Zm5.23-9.65a1.17 1.17 0 1 0 0 2.34 1.17 1.17 0 0 0 0-2.34Z" />
+            </svg>
+          </a>
+          <a
+            href={FACEBOOK_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-line text-neutral-400 transition-colors hover:border-gold hover:text-gold"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+              <path d="M13.4 21v-8.2h2.75l.41-3.2H13.4V7.56c0-.93.26-1.56 1.59-1.56h1.71V3.14C16.4 3.1 15.4 3 14.24 3c-2.44 0-4.1 1.49-4.1 4.22v2.38H7.38v3.2h2.76V21h3.26Z" />
             </svg>
           </a>
           <a

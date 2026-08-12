@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import BeforeAfterGallery from "@/components/BeforeAfterGallery";
 import ServicesContact from "@/components/ServicesContact";
-import CtaBanner from "@/components/CtaBanner";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,7 +14,6 @@ export default function Home() {
         <About />
         <BeforeAfterGallery />
         <ServicesContact />
-        <CtaBanner />
       </main>
       <Footer />
     </>
